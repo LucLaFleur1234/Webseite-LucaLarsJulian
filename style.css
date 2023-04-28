@@ -80,6 +80,7 @@ body {
     }
 
 /* Allgemeine Formatierung */
+
 h1 {
     background-color: #87c9ff;
     padding: 70px;
@@ -103,6 +104,7 @@ h3 {
     font-size: 24px;
 }
 
+/* Startseite */
 
 /*Einführung*/
 
@@ -278,11 +280,12 @@ h3 {
 /* Verhältnis der Spalten */
 .row-methode1 {   
     flex: 70%;
+    margin-left: 50px;
       }
 
 .row-methode2 {
     flex: 30%;
-    margin-left: 100px;
+    margin-left: 150px;
   }
 
   ul {
@@ -301,12 +304,18 @@ h3 {
 
   .image-text-block-methode {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
+    right: 100px;
     background-color: black;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10px;
   }
+
+/* Auswertung */
+
+/* Resultate */
+
+/* Kontakt */
 
