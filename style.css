@@ -368,9 +368,20 @@ ul {
     border-radius: 10px;
   }
 
-/* Auswertung */
-
 /* Resultate */
+.rows-resultate {
+  box-sizing: border-box;
+}
+
+.rows-resultate table {
+  display: flex;
+}
+
+.row- {
+  flex: 50%;
+  padding: 5px;
+}
+/* Auswertung */
 
 /* Kontakt */
 
