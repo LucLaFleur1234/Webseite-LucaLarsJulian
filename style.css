@@ -1,3 +1,62 @@
+/* Allgemeine Formatierung */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body { 
+  background:rgb(30,30,40); 
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+    background-color: #CC6666;
+    padding: 70px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 50px;
+    margin: 70px;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+}
+
+h2 {
+    background-color: #CC6666;
+    padding: 70px;
+    text-align: left;
+    font-size: 50px;
+    margin: 70px;
+    border-radius: 5px;
+}
+h3 {
+    font-size: 24px;
+    color: white;
+}
+
+ul {
+  color: white;
+}
+
+/* Scroll to top Button */
+#myBtn {
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px;
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: #CC4949;
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 5px;
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color: #555; 
+}
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 20px;
@@ -14,14 +73,11 @@
     background: #555; 
     }
     
-/* Dropdown Nav-bar */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    }
-    
+/* Dropdown Nav-bar */   
 .navbar {
     overflow: hidden;
     background-color: black;
+
     }
     
 .navbar a {
@@ -50,7 +106,7 @@ body {
     }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #132247;
+    background-color: #CC4949;
     }
     
 .dropdown-content {
@@ -58,7 +114,7 @@ body {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px #7fa9f8;
+    box-shadow: 0px 8px 16px 0px #CC4949;
     z-index: 1;
     }
     
@@ -79,33 +135,13 @@ body {
     display: block;
     }
 
-/* Allgemeine Formatierung */
-
-h1 {
-    background-color: #87c9ff;
-    padding: 70px;
-    text-align: center;
-    font-size: 50px;
-    margin: 0;
-}
-
-p {
-    font-size: 20px;
-}
-
-h2 {
-    background-color: #87c9ff;
-    padding: 70px;
-    text-align: left;
-    font-size: 50px;
-    margin: 0;
-}
-h3 {
-    font-size: 24px;
-}
 
 /* Startseite */
 
+.startseite p {
+  margin-left: 70px;
+  margin-right: 70px;
+ }
 /*Einführung*/
 
 /* Spalten */
@@ -119,17 +155,32 @@ h3 {
     flex: 60%;
       }
 
+.row-einfuehrung1 p, .row-einfuehrung1 h3 {
+   margin: 70px;
+}
+
 .row-einfuehrung2 {
     flex: 40%;
-  }
+}
  
 /* Überschriften der Spalten */
+.row-einfuehrung1 h2 {
+  border-radius: 5px;
+
+
+}
+
 .row-einfuehrung2 h2{
-    background-color: aliceblue;
+    background-color:#CC6666;
     padding: 70px;
     text-align: left;
     font-size: 50px;
     margin: 0;
+    border-radius: 0;
+}
+
+.row-einfuehrung2 p, .row-einfuehrung2 h3 {
+  color: black;
 }
 
 /* Timeline */
@@ -139,7 +190,7 @@ h3 {
 
 /* Set a background color */
 .timeline {
-    background-color: aliceblue;
+    background-color: #CC6666;
     font-family: Helvetica, sans-serif;
 }
 
@@ -155,7 +206,7 @@ h3 {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: #87c9ff;
+    background-color: rgb(30,30,40);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -165,10 +216,10 @@ h3 {
 /* Container around content */
 .container {
   padding: 10px 40px;
-  position: relative;
+  position:relative;
   background-color: inherit;
   width: 50%;
-  background-color: aliceblue;
+  background-color: #CC6666;
 }
 
 /* The circles on the timeline */
@@ -178,8 +229,8 @@ h3 {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: white;
-  border: 4px solid #87c9ff;
+  background-color: #CC6666;
+  border: 4px solid rgb(30,30,40);
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -280,12 +331,16 @@ h3 {
 /* Verhältnis der Spalten */
 .row-methode1 {   
     flex: 70%;
-    margin-left: 50px;
+
       }
 
 .row-methode2 {
     flex: 30%;
     margin-left: 150px;
+  }
+
+  .row-methode1 p, .row-methode1 h3, .row-methode1 ul {
+    margin-left: 70px;
   }
 
   ul {
@@ -306,7 +361,7 @@ h3 {
     position: absolute;
     bottom: 50px;
     right: 100px;
-    background-color: black;
+    background-color: #CC6666;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
@@ -319,3 +374,47 @@ h3 {
 
 /* Kontakt */
 
+/* Formular */
+form { 
+  max-width:420px; 
+  margin:50px auto; 
+  font-size: 28px;
+}
+
+.feedback-input {
+  color:white;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  font-size: 20px;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  resize:vertical;
+}
+
+[type="submit"] {
+    width: 100%;
+    background:#CC6666;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  [type="submit"]:hover { background:#CC4949; }
