@@ -21,8 +21,27 @@ function topFunction() {
 
 // Input Validation
 function validateForm() {
-  var x = document.forms["myForm"]["name"].value;
+  var x = document.forms["myForm"]["Name"].value;
+  console.log(x);
   if (x == "") {
+    alert("Formular muss vollständig abgegeben werden.");
+    return false;
+  }
+}
+
+function validateForm() {
+  var y = document.forms["myForm"]["email"].value;
+  console.log(y);
+  if (y == "") {
+    alert("Formular muss vollständig abgegeben werden.");
+    return false;
+  }
+}
+
+function validateForm() {
+  var z = document.forms["myForm"]["text"].value;
+  console.log(z);
+  if (z == "") {
     alert("Formular muss vollständig abgegeben werden.");
     return false;
   }
