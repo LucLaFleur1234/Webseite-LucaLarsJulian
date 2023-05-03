@@ -159,10 +159,6 @@ table {
     flex: 60%;
       }
 
-.row-einfuehrung1 p, .row-einfuehrung1 h3 {
-   margin: 70px;
-}
-
 .row-einfuehrung2 {
     flex: 40%;
 }
@@ -170,8 +166,6 @@ table {
 /* Überschriften der Spalten */
 .row-einfuehrung1 h2 {
   border-radius: 5px;
-
-
 }
 
 .row-einfuehrung2 h2{
@@ -187,19 +181,15 @@ table {
   color: black;
 }
 
-/* Timeline */
-* {
-    box-sizing: border-box;
+.row-einfuehrung1 p, .row-einfuehrung1 h3 {
+  margin: 70px;
 }
 
-/* Set a background color */
+/* Timeline */
 .timeline {
+    box-sizing: border-box;
     background-color: #CC6666;
     font-family: Helvetica, sans-serif;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
@@ -376,36 +366,14 @@ table {
 .rows-resultate {
   box-sizing: border-box;
   flex-wrap: nowrap;
-  
+  display: flex; 
 }
 
-.rows-resultate {
-  display: flex;
-}
-
-.rows-resultate h3 {
-  padding: 0;
-  margin: 0;
-  background-color: rgb(30,30,40);
-  color: #CC6666;
-}
 .row-resultate1, .row-resultate2, .row-resultate3, .row-resultate4 {
   flex: 25%;
   border: hidden ;
   border-radius: 5px;
   margin-left: 40px;
-}
-
-.leeres-Tabellenelement {
-  background-color: #CC6666;
-}
-table {
-  background-color: rgb(30,30,40);
-  border-collapse: collapse;
-}
-td {
-  border: #CC6666 solid;
-  padding: 15px;
 }
 
 .row-resultate1 {
@@ -414,6 +382,28 @@ td {
 
 .row-resultate4 {
   margin-right: 70px;
+}
+
+.rows-resultate h3 {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(30,30,40);
+  color: #CC6666;
+}
+
+table {
+  background-color: rgb(30,30,40);
+  border-collapse: collapse;
+}
+
+td {
+  border: #CC6666 solid;
+  padding: 15px;
+}
+
+.leeres-Tabellenelement {
+  background-color: #CC6666;
+  font-weight: bold;
 }
 
 .oel, .wasser, .zugefuehrt {
@@ -436,6 +426,11 @@ td {
 .rows-resultate img {
   padding-bottom: 0;
 }
+
+.table-center {
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Auswertung */
 
 /* Quiz */
@@ -451,6 +446,7 @@ td {
 .row-quiz1, .row-quiz2, .row-quiz3 {
   flex: 33%;
 }
+
 /* Callout box - fixed position at the bottom of the page */
 .callout {
   position: fixed;
@@ -490,22 +486,20 @@ td {
   color: lightgrey;
 }
 
+/* Flip-Box */
+.flip-box {
+  margin-bottom: 70px;
+  border-radius: 5px;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
 
 .flip-box h2 { 
   padding: 20;
   margin: 0;
   border-radius: 5px;
-}
-.flip-box {
-  margin-bottom: 70px;
-  border-radius: 5px;
-}
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-box {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
