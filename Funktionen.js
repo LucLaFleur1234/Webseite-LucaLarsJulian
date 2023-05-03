@@ -21,7 +21,7 @@ function topFunction() {
 
 // Input Validation
 function validateForm() {
-  var x = document.forms["myForm"]["name"].value;
+  var x = document.forms["myForm"]["name"];
   console.log(x);
   if (x == "") {
     alert("Formular muss vollständig abgegeben werden.");
