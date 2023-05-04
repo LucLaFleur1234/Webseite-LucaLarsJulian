@@ -494,7 +494,7 @@ td {
   margin-bottom: 70px;
   border-radius: 5px;
   background-color: transparent;
-  width: 300px;
+  width: 450px;
   height: 200px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -503,7 +503,7 @@ td {
   padding: 20;
   margin: 0;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 24px;
 }
 
 /* This container is needed to position the front and back side */
@@ -543,6 +543,7 @@ td {
   transform: rotateY(180deg);
   border-radius: 5px;
 }
+
 
 /* Slider */
 .slidecontainer {
@@ -632,4 +633,7 @@ textarea {
   }
   [type="submit"]:hover { background:#CC4949; }
 
+#text-capswarning {
+  display:none
+  ;color:red}
   

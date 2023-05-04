@@ -39,11 +39,19 @@ slider.oninput = function() {
   output.innerHTML = this.value;
 }
 
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value; // Display the default slider value
+// Get the input field
+var input = document.getElementById("myInput");
 
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-  output.innerHTML = this.value;
+// Get the warning text
+var text = document.getElementById("text-capswarning");
+
+// When the user presses any key on the keyboard, run the function
+input.addEventListener("keyup", function(event) {
+
+// If "caps lock" is pressed, display the warning text
+if (event.getModifierState("CapsLock")) {
+  text.style.display = "block";
+  } else {
+    text.style.display = "none"
 }
+});
