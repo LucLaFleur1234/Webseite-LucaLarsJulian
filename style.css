@@ -470,7 +470,7 @@ td {
   font-weight: bold;
 }
 
-.oel, .wasser, .zugefuehrt {
+.oel, .wasser, .zugefuehrt, .effizienz {
   font-weight: bold;
 }
 
@@ -496,6 +496,21 @@ td {
   margin-right: auto;
 }
 /* Auswertung */
+.text-auswertung {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.button-auswertung-quiz button {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: #CC6666;
+  height: 150px;
+  border-radius: 5px;
+  border: hidden;
+  font-size: 30px;
+}
 
 /* Quiz */
 
