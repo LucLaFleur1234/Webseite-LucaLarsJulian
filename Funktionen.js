@@ -20,16 +20,6 @@ function topFunction() {
   document.documentElement.scrollLeft = 0;
 }
 
-// Input Validation
-function validateForm() {
-  var x = document.forms["myForm"]["name"];
-  console.log(x);
-  if (x == "") {
-    alert("Formular muss vollständig abgegeben werden.");
-    return false;
-  }
-}
-
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
 output.innerHTML = slider.value; // Display the default slider value
@@ -39,19 +29,3 @@ slider.oninput = function() {
   output.innerHTML = this.value;
 }
 
-// Get the input field
-var input = document.getElementById("myInput");
-
-// Get the warning text
-var text = document.getElementById("text-capswarning");
-
-// When the user presses any key on the keyboard, run the function
-input.addEventListener("keyup", function(event) {
-
-// If "caps lock" is pressed, display the warning text
-if (event.getModifierState("CapsLock")) {
-  text.style.display = "block";
-  } else {
-    text.style.display = "none"
-}
-});
