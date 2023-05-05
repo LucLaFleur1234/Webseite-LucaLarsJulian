@@ -595,14 +595,20 @@ td {
 /* Slider */
 .slidecontainer {
   width: 100%; /* Width of the outside container */
+  font-size: 30px;
+  color: white;
+}
+.slidecontainer #f {
+  color: #CC6666;
+  font-size: 50px;
 }
 
 /* The slider itself */
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
-  width: 40%; /* Full-width */
-  height: 25px; /* Specified height */
+  width: 70%; /* Full-width */
+  height: 40px; /* Specified height */
   background: #d3d3d3; /* Grey background */
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
@@ -620,8 +626,8 @@ td {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
+  width: 35px; /* Set a specific slider handle width */
+  height: 35px; /* Slider handle height */
   background: #CC6666; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
@@ -720,3 +726,11 @@ label.star:before {
   display:none;
   color:red;}
   
+.frage-quiz h3 {
+  background-color: #CC6666;
+    padding: 50px;
+    text-align: left;
+    font-size: 30px;
+    margin: 30px;
+    border-radius: 5px;
+}
